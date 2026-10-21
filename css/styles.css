@@ -714,6 +714,17 @@ a:hover { color: var(--accent-ink); }
   .cta { padding: var(--s-4); }
 }
 
+/* short screens (phones in landscape, small laptop windows): keep the intro clear of the robot */
+@media (max-width: 820px) and (max-height: 720px) {
+  .stage-panel--intro { padding-bottom: 4.5rem; }
+  .stage-panel--intro .label { display: none; }
+  .stage-panel--intro h1 { font-size: 1.75rem; }
+  .stage-panel--intro .btn-row .btn { flex: 0 0 auto; }
+  .stage-panel--left,
+  .stage-panel--right { padding: var(--s-2); }
+  .stage-panel h2 { font-size: var(--step-1); }
+}
+
 @media (max-width: 560px) {
   .grid-2, .grid-3, .grid-4, .gallery, .form-row, .footer-grid, .steps { grid-template-columns: 1fr; }
   .stats { grid-template-columns: 1fr 1fr; }
