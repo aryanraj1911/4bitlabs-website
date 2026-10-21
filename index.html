@@ -18,6 +18,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=IBM+Plex+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/main.js" defer></script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <script type="importmap">
+    {"imports": {"three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                 "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+  </script>
+  <script type="module" src="js/robot.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -43,24 +49,50 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="wrap">
-        <div>
-          <p class="label">Robotics · STEM · Nagpur</p>
-          <h1>Building future <em>innovators</em>, one robot at a time.</h1>
-          <p class="lead">We design robotics kits, run hands-on workshops in schools and colleges, and host hackathons that make learning tech feel like a game.</p>
-          <div class="btn-row">
-            <a class="btn btn--primary" href="contact.html">Book a Workshop</a>
-            <a class="btn" href="kits.html">Explore Kits</a>
+    <section class="stage" data-stage aria-label="Introduction">
+      <div class="stage-sticky">
+        <p class="stage-wordmark" aria-hidden="true">4BITS</p>
+        <div class="stage-canvas" data-stage-canvas></div>
+
+        <div class="stage-panel stage-panel--intro is-active" data-panel="0">
+          <div class="stage-intro-text">
+            <p class="label">Robotics · STEM · Nagpur</p>
+            <h1>Building future <em>innovators</em>, one robot at a time.</h1>
+          </div>
+          <div class="stage-intro-side">
+            <p class="lead">We design robotics kits, run hands-on workshops in schools and colleges, and host hackathons that make learning tech feel like a game.</p>
+            <div class="btn-row">
+              <a class="btn btn--primary" href="contact.html">Book a Workshop</a>
+              <a class="btn" href="kits.html">Explore Kits</a>
+            </div>
           </div>
         </div>
 
-        <div class="hero-board">
-          <figure class="photo">
-            <figcaption>Photo: students building a robot</figcaption>
-          </figure>
-          <p class="hero-badge"><b>Nagpur + Akola</b>workshops across Vidarbha</p>
+        <div class="stage-panel stage-panel--left" data-panel="1">
+          <span class="stage-num">01 / Kits</span>
+          <h2>Every part, in your hands.</h2>
+          <p>Motors, sensors, wheels and a controller board. Our kits come apart so students see how each piece works, then put it back together themselves.</p>
+          <a class="btn" href="kits.html">See the kits →</a>
         </div>
+
+        <div class="stage-panel stage-panel--right" data-panel="2">
+          <span class="stage-num">02 / Workshops</span>
+          <h2>Built in class, not just explained.</h2>
+          <p>Our trainers bring the components to your school or college. Every session ends with something working on the table.</p>
+          <a class="btn" href="workshops.html">See the workshops →</a>
+        </div>
+
+        <div class="stage-panel stage-panel--left" data-panel="3">
+          <span class="stage-num">03 / Events</span>
+          <h2>Then put it to the test.</h2>
+          <p>Hackathons, robot races, quizzes and e-sports, where students compete with what they built.</p>
+          <a class="btn btn--primary" href="events.html">Upcoming events →</a>
+        </div>
+
+        <div class="stage-progress" aria-hidden="true">
+          <span data-dot="0" class="is-active"></span><span data-dot="1"></span><span data-dot="2"></span><span data-dot="3"></span>
+        </div>
+        <p class="stage-hint" aria-hidden="true">Scroll ↓</p>
       </div>
     </section>
 
