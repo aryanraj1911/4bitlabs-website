@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" role="img" aria-labelledby="t">
+  <title id="t">4BitLabs</title>
+  <g fill="none" stroke="#E0301F" stroke-linecap="round" stroke-linejoin="round">
+    <!-- the 4 -->
+    <path d="M128 14 L44 98 H176 M128 14 V112" stroke-width="16"/>
+    <!-- circuit traces -->
+    <path d="M70 72 H34 M150 40 H178 V62 M150 84 H164" stroke-width="3"/>
+    <!-- BITS -->
+    <path d="M20 128 V168 H44 a10 10 0 0 0 0 -20 H20 M20 148 H40 a10 10 0 0 0 0 -20 H20" stroke-width="10"/>
+    <path d="M66 142 V168 M84 128 H120 M102 128 V168" stroke-width="10"/>
+    <path d="M170 130 H146 a9 9 0 0 0 0 18 H160 a10 10 0 0 1 0 20 H136" stroke-width="10"/>
+  </g>
+  <g fill="#fff" stroke="#E0301F" stroke-width="3">
+    <circle cx="30" cy="72" r="5"/>
+    <circle cx="178" cy="66" r="5"/>
+    <circle cx="168" cy="84" r="4"/>
+    <circle cx="66" cy="128" r="6" fill="#E0301F"/>
+  </g>
+</svg>
